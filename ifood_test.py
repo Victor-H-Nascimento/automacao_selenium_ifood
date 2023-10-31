@@ -1,6 +1,7 @@
 from ifood_class import Ifood
+from os import getenv
 
-bot = Ifood('nascimento.victor01@gmail.com')
+bot = Ifood(getenv('EMAIL'))
 
 bot.pedido('padrao', 1)
 
